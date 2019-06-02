@@ -1,0 +1,50 @@
+{
+  "name": "jest-svelte",
+  "version": "0.0.1",
+  "description": "A tool for enabling Jest unit tests in SvelteJS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colossal-digital/jest-svelte.git"
+  },
+  "keywords": [
+    "javascript",
+    "jest",
+    "svelte",
+    "unit-test",
+    "test"
+  ],
+  "author": "Colossal Digital Pty Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colossal-digital/jest-svelte/issues"
+  },
+  "homepage": "https://github.com/colossal-digital/jest-svelte#readme",
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "jest": "24.8.0",
+    "svelte": "3.4.4"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "jest": {
+    "transform": {
+      "\\.js$": "babel-jest",
+      "\\.html$": "./dist/index.js",
+      "\\.svelte$": "./dist/index.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte",
+      "html"
+    ]
+  }
+}
