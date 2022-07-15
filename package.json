@@ -28,7 +28,7 @@
   "devDependencies": {
     "babel-jest": "^24.8.0",
     "jest": "24.8.0",
-    "svelte": "3.4.4"
+    "svelte": "3.49.0"
   },
   "dependencies": {
     "@babel/cli": "^7.4.4",
